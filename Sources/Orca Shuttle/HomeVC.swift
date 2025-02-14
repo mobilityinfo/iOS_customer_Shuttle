@@ -2,7 +2,7 @@
 // https://docs.swift.org/swift-book
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeShuttleVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
