@@ -8,7 +8,7 @@
 import UIKit
 
 
-@MainActor var getPersonalData : PeronalInfo?
+@MainActor var getPersonalData : UserData?
 @MainActor var appInfo : AppInfo?
 
 public struct AppInfo{
@@ -16,7 +16,7 @@ public struct AppInfo{
 }
 
 
-public struct PeronalInfo {
+public struct UserData {
     var city:Int?
     var emailVerificationStatus:Int?
     var gender:Int?

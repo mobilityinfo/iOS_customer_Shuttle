@@ -10,10 +10,10 @@ import UIKit
 public class SDKManager {
     
     @MainActor public static let shared = SDKManager()
-        public var personalData : PeronalInfo?
+        public var personalData : UserData?
     public var appInfo: AppInfo = AppInfo(theme: .red)
 
-    public func initializeSDK(userModel: PeronalInfo?, theme: UIColor?) {
+    public func initializeSDK(userModel: UserData?, theme: UIColor?) {
         if let userModel = userModel {
             personalData = userModel
         }
