@@ -12,7 +12,7 @@ import UIKit
 @MainActor var appInfo : AppInfo?
 
 public struct AppInfo{
-    var theme : UIColor
+   public var theme : UIColor
 }
 
 
@@ -27,7 +27,7 @@ public struct PeronalInfo {
     var userEmail:String?
     var dob:String?
     
-     init(json: [String: Any]) {
+   public init(json: [String: Any]) {
         if let name = json["user_name"] as? String {
             userName = name
         }
