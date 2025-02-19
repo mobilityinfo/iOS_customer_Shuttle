@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 public class SDKManager {
     
@@ -24,3 +25,17 @@ public class SDKManager {
         print("✅ SDK Initialized with Theme: \(theme?.description ?? "Default")")
     }
 }
+
+extension Color {
+    static let backgroundGray = Color("background_gray", bundle: .module)
+    static let backgroundBlue = Color("background_blue", bundle: .module)
+    static let border = Color("border", bundle: .module)
+    static let darkGray = Color("dark_gray", bundle: .module)
+    static var theme: Color {
+           @MainActor get { // Ensures execution on the main thread
+               Color(uiColor: SDKManager.shared.appInfo.theme)
+           }
+       }
+   
+}
+
